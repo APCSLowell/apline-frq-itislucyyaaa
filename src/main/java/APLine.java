@@ -8,9 +8,7 @@ public class APLine
     c=c1;
   }
   public double getSlope(){
-    if (b != 0)
-      return (double) a / b;
-    return Double.POSITIVE_INFINITY; 
+    return -(double) a / b;
   }
   public boolean isOnLine(int x, int y){
     return a * x + b * y + c == 0;
